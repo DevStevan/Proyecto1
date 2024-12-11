@@ -1,0 +1,155 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+.image-container {
+    display: flex;
+    gap: 1em;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#video{
+    width: 100%; 
+    max-width: 600px; 
+    height: auto;
+
+}
+
+.animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 1em auto;
+}
+
+
+
+/*ESTILOS BOTÓN animacion*/
+#animateBtn {
+    background: #fff; 
+    color: #4741d7; 
+    border: 2px solid #4741d7; 
+    padding: 16px 20px;
+    border-radius: 3px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #animateBtn:hover {
+    color: #fff;  
+  }
+  #animateBtn::after {
+    content: "";
+    background: #4741d7; 
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  #animateBtn:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+  .animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 1em auto;
+}
+
+/*ESTILOS BOTÓN sonido*/
+#playSound {
+    background: #fff; 
+    color: #4741d7; 
+    border: 2px solid #4741d7; 
+    padding: 16px 20px;
+    border-radius: 3px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #playSound:hover {
+    color: #fff;  
+  }
+  #playSound::after {
+    content: "";
+    background: #4741d7; 
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  #playSound:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}

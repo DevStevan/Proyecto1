@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Multimedia Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi App Multimedia</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#animation">Animación</a></li>
+                <li><a href="#sound">Sonido</a></li>
+                <li><a href="presentacion.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Galería de Imágenes -->
+        <section id="gallery">
+            <h2>Galería de Imágenes</h2>
+            <div class="image-container">
+                <img src="img/img0.png" alt="Imagen 0">
+                <img src="img/img1.jpg" alt="Imagen 2">
+                <img src="img/img2.jpg" alt="Imagen 3">
+            </div>
+        </section>
+
+        <!-- Video Interactivo -->
+        <section id="video-container">
+            <h2>Video Interactivo</h2>
+            <video controls class="videos">
+                <source src="videos/video1.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </section>
+
+        <!-- Animación -->
+        <section id="animation">
+            <h2>Animación Interactiva</h2>
+            <div class="animation-box"></div>
+            <button id="animateBtn">Iniciar Animación</button>
+        </section>
+
+        <!-- Sonido -->
+        <section id="sound">
+            <h2>Sonido</h2>
+            <button id="playSound">Reproducir Sonido</button>
+            <audio id="audio" src="videos/audio.mp4"></audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Aplicación Interactiva</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
